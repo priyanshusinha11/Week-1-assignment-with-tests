@@ -50,7 +50,7 @@ app.use(bodyParser.json());
 // Array to store the todo list data
 let todos = [];
 
-// Helper function to save the todos array to a file
+
 function saveTodosToFile() {
 	fs.writeFile('todos.json', JSON.stringify(todos), (err) => {
 		if (err) {
